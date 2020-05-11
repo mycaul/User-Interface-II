@@ -1,1 +1,105 @@
+
 /* Add CSS styling here */
+/* html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {  
+margin: 0;  
+padding: 0;  
+border: 0;  
+font-size: 100%;  
+font: inherit;  
+vertical-align: baseline;  
+} */
+
+
+*{
+    background-color:white;
+}
+header nav{
+    /* align-content: right; */
+/*    
+    width:100%;
+    background-color: green; */
+    /* align-items: flex-end; */
+ 
+    display:flex;
+    justify-content: space-between;
+    
+    
+ }
+ /* .logo{
+    align-items: center;
+     width:10%; 
+  }
+  .logo img{
+     max-width:100%; 
+} */
+    .links{
+    align-items: right;
+        display: center;
+ width:100%; 
+display:flex;
+justify-content:space-around;
+background: 0;
+    }
+    nav a{
+       font-weight: 770;
+        font-size: xx-large;
+        background:0;
+    }
+
+
+        .container {
+            text-align:center;
+            flex-wrap:wrap;
+            width:21%;
+            line-height:1.4;
+
+        }
+   
+   .gallery {
+       display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+        /*media queries start here*/
+    /*tablet*/
+@media(max-width: 800px){
+    .links{
+      font-size:2rem;
+    }
+    #about .text{
+      width:90%;
+    }
+}
+
+  
+  /*phone*/
+@media(max-width: 500px){
+    header nav{
+      flex-direction:column;
+    }
+    .links{
+      width:100%;
+      font-size:1.6rem;
+    }
+}
